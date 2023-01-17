@@ -20,7 +20,7 @@ type QueryParams = {
   };
 }[QueryElements[number]];
 
-const obj: QueryParams = {
+const obj: Union.Merge<QueryParams> = {
   a: 'foo',
   b: 'wow',
 };
